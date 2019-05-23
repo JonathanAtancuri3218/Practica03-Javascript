@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <script type="text/javascript" src="validaciones_usuario.js"></script>
+ <link href="estilo.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<body>
+        <header>
+            </header>
+            <br>
+
+<section class="group">
+<form id="formulario01" name="formulario01" method="POST" action="" onsubmit="return validaTodo(event)"   atribute action="pagina.php"  >
+    <h2><em>Formulario de Registro</em></h2>
+
+ <label for="cedula">Cedula (*)</label>
+ <input type="text" id="cedula" class="form-input" name="cedula" value="" placeholder="Ingrese el número de cedula ..."
+ onkeyup="validaCedula(event)" />
+<span id="mensajeCedula" ></span>
+
+ <br>
+ <label for="nombres">Nombres (*)</label>
+ <input type="text" id="nombres" class="form-input" name="nombres" value="" placeholder="Ingrese sus dos nombres
+..."  onkeyup="validarNumeros(event)" />
+<span id="mensajeNombres" ></span>
+
+ <br>
+ <label for="apellidos">Apelidos (*)</label>
+ <input type="text" id="apellidos" class="form-input"  name="apellidos" value="" placeholder="Ingrese sus dos apellidos
+..."  onkeyup="validarNumeros1(event)" />
+<span id="mensajeApellidos"  ></span>
+
+ <br>
+ <label for="direccion">Dirección (*)</label>
+ <input type="text" id="direccion" class="form-input" name="direccion" value="" placeholder="Ingrese su dirección ..."
+/>
+<span id="mensajeDireccion"  ></span>
+
+ <br>
+ <label for="telefono">Teléfono (*)</label>
+ <input type="text" id="telefono" class="form-input"  name="telefono" value="" placeholder="Ingrese su número telefónico
+..."     onkeyup="validarLetras1(event)"/>
+<span id="mensajeTelefono"  ></span>
+
+ <br>
+ <label for="fecha">Fecha Nacimiento (*)</label>
+ <input type="text" id="fechaNacimiento" class="form-input"  name="fechaNacimiento"  value="" placeholder="DDMMYYYY" 
+ onkeyup="validarFecha(event)/>
+<span id="mensajeFecha"  ></span>
+
+ <br>
+ <label for="correo">Correo electrónico (*)</label>
+ <input type="text" id="correo" class="form-input" name="correo" value="" placeholder="Ingrese su correo electrónico
+..."  onkeyup="validarEmail(event)"  />
+<span id="mensajeCorreo" ></span>
+
+ <br>
+ <label for="contrasena">Contraseña (*)</label>
+ <input type="password" id="contrasena" class="form-input" name="contrasena" value="" placeholder="Ingrese su
+contraseña ..." />
+<span id="mensajeContrasena"  ></span>
+
+ <br>
+ <input type="submit" id="crear" name="crear" onclick="return validaTodo();"    value="Aceptar" />
+ <input type="button" value="Mostrar Imagenes" onclick="window.location.href='galeria.html';">
+ <input type="reset" id="cancelar" name="cancelar" value="Cancelar" />
+ </form>
+</section>
+</body>
+</html>
